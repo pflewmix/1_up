@@ -49,6 +49,8 @@ alert(+y); // no effect since the value is a number
 
 console.log(+true); // converts non-number to number
 console.log(+""); // outputs 0
+const myNum = Number(myString); // converts string to number
+const myString = String(myNum); // converts number to string
 
 let apples = '2';
 let oranges = '3';
