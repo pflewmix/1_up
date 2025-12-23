@@ -6,13 +6,13 @@ strings are immutable: meaning they can't be changed, only replaced */
 // string length
 let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 let length = text.length;
-console.log(length);
+console.log(length); // 26
 
 // extracting string characters
 // charAt() - returns the character at a specified index
 let text2 = 'HELLO WORLD';
-let char = text.charAt(0);
-console.log(char);
+let char = text2.charAt(0);
+console.log(char); // 'H'
 // charCodeAt() - returns the code of a character at a specified index
 // returns a UTF-16 code (an integer between 0 and 65535)
 let text3 = 'HELLO WORLD';
