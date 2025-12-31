@@ -8,21 +8,17 @@ function getComputerChoice() {
         return 'rock';
     }
 }
-console.log(`Computer: ${getComputerChoice()}`);
 
-let human = prompt('Enter rock, paper, or scissors.').toLowerCase(0);
+
 function getHumanChoice() {
-    if (human === 'scissors') {
-        return 'scissors';
-    } else if (human === 'paper') {
-        return 'paper';
-    } else if (human === 'rock') {
-        return 'rock';
+    let input = prompt('Enter rock, paper, or scissors').toLowerCase();
+    if (input === 'rock' || input === 'scissors' || input === 'paper') {
+        return input;
     } else {
-        return 'Invalid Entry: Please enter rock, paper, or scissors!'
+        return null;
     }
 }
-console.log(`Me: ${getHumanChoice()}`);
+//c
 
 let humanScore = 0;
 let computerScore = 0;
@@ -30,26 +26,29 @@ let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice();
 
 function playRound(humanSelect, computerSelect) {
-    if (humanSelect == 'rock' || humanSelect == 'paper' || humanSelect == 'scissors') {
-        if (humanSelect === computerSelect) {
-            console.log('Draw: No score!');
-        } else if (humanSelect == 'scissors' && computerSelect == 'paper') {
-            console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
-            humanScore++
-        } else if (humanSelect == 'rock' && computerSelect == 'scissors') {
-            console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
-            humanScore++
-        } else if (humanSelect == 'paper' && computerSelect == 'rock') {
-            console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
-            humanScore++
-        } else {
-            console.log(`You lose! ${computerSelect} beats ${humanSelect}.`);
-            computerScore++
-        }
-        console.log(`You: ${humanScore} | CPU: ${computerScore}`);
+    console.log(`Me: ${humanSelect}`);
+    console.log(`Computer: ${computerSelect}`);
+    if (humanSelect == computerSelect) {
+        console.log('Draw: No score!');
+    } else if (humanSelect == 'scissors' && computerSelect == 'paper') {
+        console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
+        humanScore++
+    } else if (humanSelect == 'rock' && computerSelect == 'scissors') {
+        console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
+        humanScore++
+    } else if (humanSelect == 'paper' && computerSelect == 'rock') {
+        console.log(`You win! ${humanSelect} beats ${computerSelect}.`);
+        humanScore++
     } else {
-        console.log('Invalid Entry');
+        console.log(`You lose! ${computerSelect} beats ${humanSelect}.`);
+        computerScore++
     }
+    console.log(`You: ${humanScore} | CPU: ${computerScore}`);
+    
 }
 
-playRound(humanChoice, computerChoice);
+if (humanChoice === null) {
+    console.log('Invalid entry. Round not played.');
+} else {
+    playRound(humanChoice, computerChoice);
+}
