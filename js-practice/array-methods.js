@@ -44,3 +44,14 @@ console.log(nums.concat(arrayLike)); // 1,2,something, else
 ['Bilbo', 'Gandalf', 'Nazgul'].forEach((item, index, array) => {
     console.log(`${item} is at index ${index} in ${array}`);
 });
+
+function addOne(num) {
+    return num + 1;
+}
+// map() - returns a new array and does not change the original
+const mappedArr = nums.map((num) => num + 1);
+console.log(mappedArr);
+
+// filter() - similar to map, except it returns a new array with items included only if the callback function returns true for it
+const oddNums = nums.filter((num) => num % 2 !== 0);
+console.log(oddNums);
