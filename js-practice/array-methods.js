@@ -55,3 +55,13 @@ console.log(mappedArr);
 // filter() - similar to map, except it returns a new array with items included only if the callback function returns true for it
 const oddNums = nums.filter((num) => num % 2 !== 0);
 console.log(oddNums);
+
+// reduce() - reduces the elements of an array to a single value
+const prices = [25, 50, 5, 70, 10];
+const total = prices.reduce(sum);
+
+console.log(`$${total.toFixed(2)}`)
+
+function sum(previous, next) {
+    return previous + next;
+}
