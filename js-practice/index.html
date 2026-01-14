@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- the javascript file can also be linked in the head, but must be followed by the defer keyword to load the file after the HTML is parsed -->
+     <script src="dom-tree-practice.js" defer></script>
 </head>
 <body>
     <!--
@@ -22,7 +25,6 @@
     <button>Search</button>
 
     <p></p>
-    -->
 
     <label for='number'>Enter number: </label>
     <input id='number' type='number'>
@@ -31,6 +33,20 @@
     <p>Output:</p>
 
     <div class="output"></div>
+
+    <div id="container">
+        <div class="display"></div>
+        <div class="controls"></div>
+    </div>
+    -->
+
+    <h1>THE TITLE OF THE WEBPAGE</h1>
+    <div id="container"></div>
+    <button id="btn">Click This</button>
+    <button id="one">Click Me</button>
+    <button id="two">Click Me</button>
+    <button id="three">Click Me</button>
+
     <!--
         <script src="./javascript.js"></script>
         <script src="./notes.js"></script>
@@ -51,7 +67,7 @@
         <script src="./scraps.js"></script>
         <script src="./arrays.js"></script>
         <script src="./array-methods.js"></script>
-    -->
         <script src="./practice2.js"></script>
+    -->
 </body>
 </html>
