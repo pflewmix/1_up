@@ -34,7 +34,9 @@ box.appendChild(para2);
 
 container.appendChild(box);
 
-// Events - actions that occur on a webpage, such as mouse-clicks or key-presses
+
+
+// EVENTS - actions that occur on a webpage, such as mouse-clicks or key-presses
 const btn = document.querySelector('#btn');
 
 // DOM element can only have one 'onclick' property
