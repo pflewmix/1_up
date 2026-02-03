@@ -1,0 +1,5 @@
+TABLE - a structured set of data made up of rows and columns
+enables quick and easy access to values that indicate some kind of connection between different types of data
+e.g. a person and their age, a day of the week, or the timetable for an event/organization
+
+element tag - <table></table>

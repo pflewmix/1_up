@@ -1,0 +1,12 @@
+SVGs - scalable vector graphics
+a scalable image format - they will easily scale to any size and retain their quality without increasing their filesize
+
+often used for:
+icons, graphs/charts, simple large images, patterned backgrounds, and applying effects to other elements via SVG filters
+
+SVGs are defined using XML
+XML (extensible markup language) - an HTML-like syntax which is used for lots of things
+
+Linking SVGs:
+- use an <img> element
+- link it in CSS > background-image: url(./my-image.svg)
