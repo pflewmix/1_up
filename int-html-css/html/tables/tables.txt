@@ -3,3 +3,39 @@ enables quick and easy access to values that indicate some kind of connection be
 e.g. a person and their age, a day of the week, or the timetable for an event/organization
 
 element tag - <table></table>
+
+Tags Used In <table>
+<tr> - table row
+<th> - table header
+<td> - table data
+
+Table Data Attributes (ref. "animals-table.html")
+colspan - value determines how many columns the element will take up
+rowspan - value determines how many rows the element will take up
+scope - added to <th> to tell screen readers exactly what cells the header is a header for
+-> values are col or row (for columns and row)
+--> colgroup and rowgroup for headings that sit over the top of multiple columns or rows
+
+Grouping Columns
+<colgroup> - included as a child of the table (right after the opening <table> element)
+<col> - one or more can be included inside of <colgroup> to represent groups of columns
+
+Column Attribute
+span - indicates the number of columns in a group
+
+Captions
+<caption> - adds a caption to a table that is meant to contain a description of the table contents
+-> advantageous for blind users so a screen reader can give a quick description of the table rather than read out the contents of many cells
+
+Table Structure (Sections)
+<thead> - table header
+-> typically wraps the first row containing the column headings
+<tbody> - table body
+-> wraps the main part of the table content that isn't the header or footer
+<tfoot> - table footer
+-> typically wraps the final row. may include sum of items in previous rows
+
+Association Attributes
+id & headers
+headers - used to link a cell (<td> or <th>) to one or more header cells
+-> must match the unique id of a <th> element that the cell is associated with
