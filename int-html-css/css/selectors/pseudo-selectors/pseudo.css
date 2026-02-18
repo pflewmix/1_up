@@ -1,0 +1,48 @@
+article p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+article p::first-line {
+    font-style: italic;
+}
+
+article p:hover {
+    color: blue;
+}
+
+article p:last-child {
+    background-color: orange;
+}
+
+article p::first-letter {
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+article::selection {
+    background-color: red;
+}
+
+.box::after {
+    content: " ➥";
+}
+
+.box::before {
+    content: '';
+    display: block; /* display is set to block so the width and height can be adjusted */
+    width: 100px;
+    height: 100px;background-color: rebeccapurple;
+    border: 1px solid black;
+}

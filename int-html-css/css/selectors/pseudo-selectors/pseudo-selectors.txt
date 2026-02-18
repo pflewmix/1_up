@@ -1,0 +1,20 @@
+Pseudo-class - a selector that selects elements that are in a specific state
+-> keywords that start with a colon (:)
+    :first-child - always targets the first child element of an element
+
+User-action pseudo classes - act as if a class had been added to the element when the user interacts with it
+-> aka dynamic pseudo-classes
+    :hover - only applies if the user moves their ponter over an element, typically a link
+    :focus - only applies if the user focuses the element by clicking or using keyboard controls
+    :active - only applies to elements that are currently being clicked
+
+Pseudo-elements - act as if a whole new HTML element was added into the markup
+-> start with a double colon (::)
+    ::first-line - selects only the first line if the number of words increases or decreases
+
+Generated Content - special pseudo-elements are used along with the content propert to insert content into your document using CSS
+-> not really used to add text because it is inaccesible to some screen readers and might be hard for someone to find and edit in the future
+-> more so used to insert an icon
+-> also frequently used to insert an empty string, which can then be styled just like any element on the page
+    ::before - inserts before selected content
+    ::after - inserts after selected content

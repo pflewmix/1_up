@@ -1,0 +1,31 @@
+/* descendant combinator */
+main div {
+
+}
+
+/* child combinator (>) - only selects direct children */
+/* divs with the class 'child' will get selected by this */
+main > div {
+
+}
+
+/* divs with the class 'grand-child' will get selected */
+main > div > div {
+
+}
+
+/* adjacent sibling combinator (+) - selects an element on the same level of indentation as the target */
+/* only the div with the classes 'child group2' will get selected */
+.group1 + div {
+
+}
+
+/* only the div with the classes 'child group3' will get selected */
+.group1 + div + div {
+
+}
+
+/* general sibling combinator (~) - selects all of the siblings following an element */
+.group1 ~ div {
+    
+}

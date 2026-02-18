@@ -1,0 +1,17 @@
+CSS Units
+
+Absolute Units - those that are always the same in any context
+-> px (pixel), in (inch), cm (centimeter)
+
+Relative Units - units that can change based on their context
+-> em & rem (recommended to use rem over em)
+
+1em - the font-size of an element
+-> if element's font-size is 16px. setting its width to 4em would make its width 64px
+
+1rem - the font-size of the root element (:root or html)
+
+
+Viewport Units - relate to the size of the Viewport
+1vh - equal to 1% of the viewport height
+1vw - equal to 1% of the viewport width
